@@ -6,7 +6,7 @@ Usage:
 		
 classes:
 	<details>
-	<sumary>button: </sumary>
+		<sumary>button: </sumary>
 		<p>the button class is a simple button with the following arguments:
 			text: (string) the text label of the button,
 			textColor ({r, g, b, a}) the color for the label,
@@ -51,4 +51,4 @@ classes:
 		```
 		this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button, so you dont have to worry about that.
 	</p>
-</details>
+	</details>
