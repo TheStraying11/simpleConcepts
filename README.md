@@ -2,10 +2,10 @@ Simple concepts for the löve2d game framework
 
 <details>
 	<summary>Usage:</summary>
-	<p>
+	<pre>
 		to use this module, simply download 'simpleConcepts.lua' and place it in your project directory then require this module in your main.lua file like so
 		`simpleConcepts = require('simpleConcepts')`
-	</p>
+	</pre>
 </details>
 <details>
 	<summary>classes:</summary>
@@ -13,7 +13,7 @@ Simple concepts for the löve2d game framework
 		<summary>ui:</summary>
 		<details>
 			<summary>button:</summary>
-			<p>
+			<pre>
 				the button class is a simple button with the following arguments:
 					text: (string) the text label of the button,
 					textColor ({r, g, b, a}) the color for the label,
@@ -57,7 +57,7 @@ Simple concepts for the löve2d game framework
 					end
 					```
 				this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button, so you dont have to worry about that.
-			</p>
+			</pre>
 		</details>
 	</details>
 </details>
