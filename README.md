@@ -8,13 +8,13 @@ Usage:
 		`button` :
 			the button class is a simple button with the following arguments:
 				text: (string) the text label of the button,
-				textColor ({r, g, b, a}) color for the label,
+				textColor ({r, g, b, a}) the color for the label,
 				buttonColor ({r, g, b, a}) the color for the background (rectangle) of the button,
 				x (number) the top left x co-ord of the button,
 				y (number) the top left y co-ord of the button,
 				width (number) the width of the button,
 				height (number) the height of the button,
-				callback (function) callback function for when the button is pressed,
+				callback (function) a callback function for when the button is pressed,
 				optional (table) this is a table filled with optional keyword arguments, these are as follows:
 					mode = 'fill' (string) mode passed to love.graphics.rectangle
 					rx = nil (number) rx passed to love.graphics.rectangle,
