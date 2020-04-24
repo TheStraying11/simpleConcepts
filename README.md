@@ -7,7 +7,7 @@ to use this module, simply download 'simpleConcepts.lua' and place it in your pr
 `simpleConcepts = require('simpleConcepts')`
 	</pre>
 </details>
-<details>
+&nbsp; &nbsp; <details>
 	<summary>classes:</summary>
 	<details>
 		<summary>ui:</summary>
