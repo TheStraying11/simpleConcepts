@@ -5,8 +5,7 @@ Usage:
 	`simpleConcepts = require('simpleConcepts')`
 		
 classes:
-	<details>
-		<sumary>button: </sumary>
+	<button: >
 		<p>the button class is a simple button with the following arguments:
 			text: (string) the text label of the button,
 			textColor ({r, g, b, a}) the color for the label,
@@ -24,31 +23,31 @@ classes:
 				textLimit = love.graphics.getWidth() (number) limit passed to love.graphics.printf,
 				font = love.graphics.getFont() (Löve2d Font) the font used for the label,
 				textAlignment = 'center' ('left', 'center', or 'right') the alignment passed to love.graphics.printf
-		the button is used as follows: 
-		```lua
-		simpleConcepts = require('simpleConcepts')
-		local button
-		function love.load()
-			button = simpleConcepts.ui.button(
-				'ping',
-				{0,0,0,1},
-				{1,0,1,1},
-				60,
-				60,
-				120,
-				120,
-				function(object, x, y, button, istouch, presses)
-					print('pong')
-				end
-			)
-		end
-		function love.graphics.draw()
-			button:draw()
-		end
-		function love.mousepressed(x, y, button, istouch, presses)
-			button:handleTouch(x, y, button, istouch, presses)
-		end
-		```
-		this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button, so you dont have to worry about that.
-	</p>
-	</details>
+			the button is used as follows: 
+			```lua
+			simpleConcepts = require('simpleConcepts')
+			local button
+			function love.load()
+				button = simpleConcepts.ui.button(
+					'ping',
+					{0,0,0,1},
+					{1,0,1,1},
+					60,
+					60,
+					120,
+					120,
+					function(object, x, y, button, istouch, presses)
+						print('pong')
+					end
+				)
+			end
+			function love.graphics.draw()
+				button:draw()
+			end
+			function love.mousepressed(x, y, button, istouch, presses)
+				button:handleTouch(x, y, button, istouch, presses)
+			end
+			```
+			this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button, so you dont have to worry about that.
+		</p>
+	</button:>
