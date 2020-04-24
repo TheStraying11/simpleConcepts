@@ -8,9 +8,7 @@ simpleConcepts = require('simpleConcepts')
 ```
 	
 ## Classes
-<details>
-	<summary>Button</summary>	
-	<p>
+### Button
 the button class is a simple button with the following arguments:
 * `text` (string): the text label of the button,
 * `textColor` (`{r, g, b, a}`): the color for the label,
@@ -58,5 +56,3 @@ end
 ```
 
 this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button
-	</p>
-</details>
