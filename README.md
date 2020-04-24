@@ -7,11 +7,11 @@ to use this module, simply download 'simpleConcepts.lua' and place it in your pr
 `simpleConcepts = require('simpleConcepts')`
 	</pre>
 </details>
-&nbsp; &nbsp; <details>
+<details>
 	<summary>classes:</summary>
-	<details>
+	* <details>
 		<summary>ui:</summary>
-		<details>
+		 - <details>
 			<summary>button:</summary>
 			<pre>
 the button class is a simple button with the following arguments:
