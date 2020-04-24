@@ -1,9 +1,8 @@
-# simpleConcepts
 Simple concepts for the löve2d game framework
 
 Usage:
 	to use this module, simply download 'simpleConcepts.lua' and place it in your project directory then require this module in your main.lua file like so
-		`simpleConcepts = require('simpleConcepts')
+	`simpleConcepts = require('simpleConcepts')`
 		
 	classes:
 		`button` :
@@ -25,7 +24,7 @@ Usage:
 					font = love.graphics.getFont() (Löve2d Font) the font used for the label,
 					textAlignment = 'center' ('left', 'center', or 'right') the alignment passed to love.graphics.printf
 			the button is used as follows: 
-			```
+			`
 			simpleConcepts = require('simpleConcepts')
 			
 			local button
@@ -52,4 +51,4 @@ Usage:
 			function love.mousepressed(x, y, button, istouch, presses)
 				button:handleTouch(x, y, button, istouch, presses)
 			end
-			``` this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button, so you dont have to worry about that.
+			` this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button, so you dont have to worry about that.
