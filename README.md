@@ -4,7 +4,7 @@
 ## Usage:
 to use this module, simply download 'simpleConcepts.lua' and place it in your project directory then require this module in your main.lua file like so:
 ```lua
-simpleConcepts = require('simpleConcepts')
+local simpleConcepts = require('simpleConcepts')
 ```
 	
 ## Classes
@@ -25,10 +25,10 @@ the button class is a simple button with the following arguments:
 
 the button is used as follows: 
 ```lua
-simpleConcepts = require('simpleConcepts')
+local simpleConcepts = require('simpleConcepts')
 local button
 function obsi.load()
-	button = simpleConcepts.ui.button(
+	local button = simpleConcepts.ui.button(
 		'ping',
 		{0,0,0,1},
 		{1,0,1,1},
