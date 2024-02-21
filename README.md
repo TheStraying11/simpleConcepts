@@ -4,7 +4,7 @@
 ## Usage:
 to use this module, simply download 'simpleConcepts.lua' and place it in your project directory then require this module in your main.lua file like so:
 ```lua
-simpleConcepts = require('simpleConcepts')
+local simpleConcepts = require('simpleConcepts')
 ```
 	
 ## Classes
@@ -31,7 +31,7 @@ love.graphics.printf
 
 the button is used as follows: 
 ```lua
-simpleConcepts = require('simpleConcepts')
+local simpleConcepts = require('simpleConcepts')
 local button
 function love.load()
 	button = simpleConcepts.ui.button(
