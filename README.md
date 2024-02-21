@@ -1,5 +1,5 @@
 
-# Simple concepts for the löve2d game framework
+# Simple concepts for the Obsi 2d game framework
 
 ## Usage:
 to use this module, simply download 'simpleConcepts.lua' and place it in your project directory then require this module in your main.lua file like so:
@@ -19,21 +19,15 @@ the button class is a simple button with the following arguments:
 * `height` (number): the height of the button,
 * `callback` (function): a callback function for when the button is pressed,
 * `optional` (table): this is a table filled with optional keyword arguments, these are as follows:
-	- `mode = 'fill'` (string): mode passed to love.graphics.rectangle
-	- `rx = nil` (number): rx passed to love.graphics.rectangle,
-	- `ry = rx` (number): ry passed to love.graphics.rectangle,
-	- `segments = nil` (number): segments passed to love.graphics.rectangle,
-	- `textLimit = love.graphics.getWidth()` (number): limit passed to love.graphics.printf,
-	- `font = love.graphics.getFont()` (Löve2d Font): the font used for the label,
-	- `textAlignment = 'center'` (`'left'`, `'center'`, or `'right'`): the alignment passed to 
-love.graphics.printf
+	- `mode = 'fill'` (string): mode passed to obsi.graphics.rectangle
+	- `textLimit = love.graphics.getWidth()` (number): limit passed to obsi.graphics.printf,
 
 
 the button is used as follows: 
 ```lua
 simpleConcepts = require('simpleConcepts')
 local button
-function love.load()
+function obsi.load()
 	button = simpleConcepts.ui.button(
 		'ping',
 		{0,0,0,1},
@@ -42,17 +36,17 @@ function love.load()
 		60,
 		120,
 		120,
-		function(object, x, y, button, istouch, presses)
+		function(object, x, y, button)
 			print('pong')
 		end
 	)
 end
-function love.graphics.draw()
+function obsi.graphics.draw()
 	button:draw()
 end
-function love.mousepressed(x, y, button, istouch, presses)
-	button:handleTouch(x, y, button, istouch, presses)
+function obsi.mousepressed(x, y, button)
+	button:handleTouch(x, y, button)
 end
 ```
 
-this will draw a simple button and handle when it is clicked or tapped, the callback function is passed the actual button object aswell as all of the click/touch data, so you can do further checks inside it, the only check performed for you is whether the click/tap landed on the button
+this will draw a simple button and handle when it is clicked, the callback function is passed the actual button object, so you can do further checks inside it, the only check performed for you is whether the click landed on the button
