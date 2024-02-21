@@ -28,7 +28,7 @@ the button is used as follows:
 local simpleConcepts = require('simpleConcepts')
 local button
 function obsi.load()
-	local button = simpleConcepts.ui.button(
+	button = simpleConcepts.ui.button(
 		'ping',
 		{0,0,0,1},
 		{1,0,1,1},
