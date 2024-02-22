@@ -49,4 +49,4 @@ function obsi.mousepressed(x, y, button)
 end
 ```
 
-this will draw a simple button and handle when it is clicked, the callback function is passed the actual button object, so you can do further checks inside it, the only check performed for you is whether the click landed on the button
+this will draw a simple button and handle when it is clicked, the callback function is passed the actual button object, the x position, the y position, and the mouse button that clicked it, so you can do further checks inside it, the only check performed for you is whether the click landed on the button
